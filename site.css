@@ -1,0 +1,149 @@
+/* Color palette from coolors.com
+Papaya Whip   - #FFEFD5
+Polished Pine - #6C9A8B
+Black Coffee  - #32292F
+Umber         - #705D56
+
+Fonts from fonts.google.com
+Bellota Italic - 400, 700
+Roboto         - 300, 400
+*/
+
+/* General Styles */
+:root {
+    --papaya-whip: #FFEFD5;
+    --polished-pine: #6C9A8B;
+    --black-coffee: #32292F;
+    --umber: #705D56;
+    --generic-font: 'Times New Roman', Times, serif;
+    --heading-font: 'Bellota', cursive;
+    --body-font: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+p, figcaption, li, a {
+    font-family: var(--body-font);
+}
+
+figcaption {
+    color: var(--black-coffee);
+}
+
+body {
+    background-color: var(--polished-pine);
+}
+
+#main-content {
+    padding-top: 50.4px; /* set as same height as nav to compensate for the overlap */
+    padding-bottom: 37.6px; /* set as same height as footer to compensate for the overlap */
+}
+
+#page-title {
+    color: var(--black-coffee);
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--umber);
+    color: var(--papaya-whip);
+    text-align: center;
+}
+
+nav ul {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    padding-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--papaya-whip);
+}
+
+nav a:hover {
+    color: var(--black-coffee);
+}
+
+nav a:visited {
+    color: var(--black-coffee);
+}
+
+/* Cards */
+.card-gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card-pic figure {
+    text-align: center;
+}
+
+/* this is just for testing so I can see exactly where the borders of the grid are
+.card-info, .card-pic {
+    border: 1px solid rgba(185, 63, 8, 1);
+}*/
+
+.card-pic img {
+    height: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-info p {
+    margin-top: 150px; /* Set as half of .card-pic img height so it is halfway down the corresponding img */
+    border: 1px solid var(--umber);
+    border-radius: 15px;
+    background-color: var(--umber);
+    color: var(--papaya-whip);
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black-coffee);
+    color: var(--papaya-whip);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+footer p {
+    float: right;
+    padding-right: 10px;
+    font-size: .75em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* About page */
+#about-pic {
+    text-align: center;
+}
+
+#about-pic img {
+    height: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#about-text {
+    border: 1px solid var(--umber);
+    border-radius: 15px;
+    background-color: var(--umber);
+    color: var(--papaya-whip);
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);  
+}
