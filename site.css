@@ -46,6 +46,29 @@ body {
     text-align: center;
 }
 
+.umber-rounded-txtbox {
+    border: 1px solid var(--umber);
+    border-radius: 15px;
+    background-color: var(--umber);
+    color: var(--papaya-whip);
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+.papaya-link {
+    text-decoration: none;
+    color: var(--black-coffee);
+}
+
+.papaya-link:hover {
+    color: var(--polished-pine);
+}
+
+.papaya-link:visited {
+    color: var(--polished-pine);
+}
+
 /* Navigation */
 nav {
     position: fixed; 
@@ -137,13 +160,4 @@ footer a:hover {
 #about-pic img {
     height: 300px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-#about-text {
-    border: 1px solid var(--umber);
-    border-radius: 15px;
-    background-color: var(--umber);
-    color: var(--papaya-whip);
-    padding: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);  
 }
