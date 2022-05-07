@@ -56,17 +56,17 @@ body {
     text-align: center; 
 }
 
-.papaya-link {
+a {
     text-decoration: none;
-    color: var(--black-coffee);
+    color: var(--papaya-whip);
 }
 
-.papaya-link:hover {
+a:hover {
     color: var(--polished-pine);
 }
 
-.papaya-link:visited {
-    color: var(--polished-pine);
+nav a:visited {
+    color: var(--papaya-whip);
 }
 
 /* Navigation */
@@ -87,19 +87,6 @@ nav ul {
 nav li {
     display: inline;
     padding-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--papaya-whip);
-}
-
-nav a:hover {
-    color: var(--black-coffee);
-}
-
-nav a:visited {
-    color: var(--black-coffee);
 }
 
 /* Cards */
